@@ -27,11 +27,13 @@ public class GithubProvider {
         }
         return null;
     }
+    //新方法将access_token加入到头部进行传递
     public GithubUser getUser(String accessToken) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url("https://api.github.com/user?access_token" + accessToken)
-                .header("Authorization","token"+accessToken)
+                //.header("Authorization","token "+accessToken)
+                .addHeader("Authorization","token "+accessToken)
                 .build();
         try {
             Response response = client.newCall(request).execute();
