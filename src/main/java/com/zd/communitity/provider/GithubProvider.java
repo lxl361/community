@@ -1,13 +1,10 @@
 package com.zd.communitity.provider;
-
 import com.alibaba.fastjson.JSON;
 import com.zd.communitity.dto.AccessTokenDTO;
 import com.zd.communitity.dto.GithubUser;
 import okhttp3.*;
 import org.springframework.stereotype.Component;
-
 import java.io.IOException;
-
 @Component
 public class GithubProvider {
     public String getAccessToken(AccessTokenDTO accessTokenDTO) {
