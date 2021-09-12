@@ -1,5 +1,4 @@
 package com.zd.communitity.controller;
-
 import com.zd.communitity.dto.AccessTokenDTO;
 import com.zd.communitity.dto.GithubUser;
 import com.zd.communitity.mapper.UserMapper;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
-
 @Controller
 public class AuthorizationController {
     @Autowired
