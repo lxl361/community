@@ -4,11 +4,6 @@ import lombok.*;
 
 import java.io.Serializable;
 @Data
-@Setter
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
 public class User implements Serializable {
     private Integer id;
     private String accountId;
@@ -16,5 +11,5 @@ public class User implements Serializable {
     private String token;
     private Long gmtCreate;
     private Long gmtModified;
-
+    //private String avatarUrl;
 }

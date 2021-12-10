@@ -4,14 +4,12 @@ import com.zd.communitity.mapper.QuestionMapper;
 import com.zd.communitity.mapper.UserMapper;
 import com.zd.communitity.model.Question;
 import com.zd.communitity.model.User;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 

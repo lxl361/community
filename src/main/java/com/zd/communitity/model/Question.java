@@ -4,11 +4,6 @@ import lombok.*;
 
 import java.io.Serializable;
 @Data
-@Setter
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
 public class Question implements Serializable {
     private Integer id;
     private String title;
